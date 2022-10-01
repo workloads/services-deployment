@@ -14,12 +14,26 @@
 <!-- BEGIN_TF_DOCS -->
 ### Inputs
 
-No inputs.
+| Name | Description | Type | Required |
+|------|-------------|------|:--------:|
+| datadog_api_key | Datadog API Key. | `string` | yes |
+| datadog_api_url | Datadog API URL. | `string` | yes |
+| datadog_api_zone | Datadog API Zone. | `string` | yes |
+| datadog_app_key | Datadog App Key. | `string` | yes |
+| hcp_boundary_admin_password | HCP Boundary Cluster Admin Password. | `string` | yes |
+| hcp_boundary_admin_username | HCP Boundary Cluster Admin Username. | `string` | yes |
+| hvn_id_aws | AWS-specific HashiCorp HVN Identifier. | `string` | yes |
+| project_identifier | Human-readable Project Identifier. | `string` | yes |
 
 ### Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| hcp_vault_urls | HCP Vault URLs. |
 <!-- END_TF_DOCS -->
+
+## Author Information
+
 This module is maintained by the contributors listed on [GitHub](https://github.com/workloads/service-deployments/graphs/contributors).
 
 ## License
