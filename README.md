@@ -29,6 +29,7 @@
 
 | Name | Description |
 |------|-------------|
+| hcp_boundary_urls | HCP Boundary URLs. |
 | hcp_vault_urls | HCP Vault URLs. |
 <!-- END_TF_DOCS -->
 
