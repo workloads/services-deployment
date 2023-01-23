@@ -46,3 +46,21 @@ variable "project_identifier" {
   type        = string
   description = "Human-readable Project Identifier."
 }
+
+variable "tfe_organization" {
+  type        = string
+  description = "Name of the Terraform Cloud Organization."
+}
+
+locals {
+  # HCP Vault-specific Configuration Variables for Cluster lifecycle management
+  hcp_vault_variables = [
+    {
+      key         = "hcp_vault_cluster_id"
+      category    = "terraform"
+      value       = module.hcp_vault_aws.hcp_vault_cluster.cluster_id
+      description = "HCP Vault Cluster ID."
+      sensitive   = false
+    }
+  ]
+}

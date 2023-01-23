@@ -1,7 +1,7 @@
 module "hcp_vault_aws" {
-  # see
   source  = "ksatirli/vault-cluster/hcp"
   version = "1.1.0"
+  # see https://registry.terraform.io/modules/ksatirli/vault-cluster/hcp/latest
 
   cluster_id = "${var.project_identifier}-aws"
   hvn_id     = var.hvn_id_aws
