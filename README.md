@@ -24,6 +24,7 @@
 | hcp_boundary_admin_username | HCP Boundary Cluster Admin Username. | `string` | yes |
 | hvn_id_aws | AWS-specific HashiCorp HVN Identifier. | `string` | yes |
 | project_identifier | Human-readable Project Identifier. | `string` | yes |
+| tfe_organization | Name of the Terraform Cloud Organization. | `string` | yes |
 
 ### Outputs
 
