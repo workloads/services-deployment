@@ -7,11 +7,18 @@
 <!-- TOC -->
 * [Terraform Cloud Workspace `services-deployment`](#terraform-cloud-workspace-services-deployment)
   * [Table of Contents](#table-of-contents)
+  * [Usage](#usage)
     * [Inputs](#inputs)
     * [Outputs](#outputs)
   * [Author Information](#author-information)
   * [License](#license)
 <!-- TOC -->
+
+## Usage
+
+This repository uses a standard Terraform workflow (`init`, `plan`, `apply`).
+
+For more information, including detailed usage guidelines, see the [Terraform documentation](https://developer.hashicorp.com/terraform/cli/commands).
 
 <!-- BEGIN_TF_DOCS -->
 ### Inputs
