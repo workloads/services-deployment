@@ -1,6 +1,6 @@
 # Terraform Cloud Workspace `services-deployment`
 
-> This directory manages the lifecycle of the services deployment for [@workloads](https://github.com/workloads).
+> This directory manages Services Deployment for [@workloads](https://github.com/workloads).
 
 ## Table of Contents
 
