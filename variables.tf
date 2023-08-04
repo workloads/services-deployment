@@ -37,6 +37,17 @@ variable "hcp_boundary_admin_username" {
   description = "HCP Boundary Cluster Admin Username."
 }
 
+variable "hcp_boundary_cluster_tier" {
+  type        = string
+  description = "The tier that the HCP Boundary cluster will be provisioned as."
+  default     = "standard"
+
+  validation {
+    condition     = can(regex("^(standard|premium)$", var.hcp_boundary_cluster_tier))
+    error_message = "The HCP Boundary cluster tier must be either `standard` or `premium`."
+  }
+}
+
 variable "hvn_id_aws" {
   type        = string
   description = "AWS-specific HashiCorp HVN Identifier."
