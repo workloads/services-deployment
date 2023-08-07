@@ -12,7 +12,7 @@ module "hcp_vault_aws" {
     datadog_region  = "us1"
   }
 
-  min_vault_version = "1.10.3"
+  min_vault_version = "1.14.0"
   public_endpoint   = true
 
   # see https://cloud.hashicorp.com/products/vault/pricing

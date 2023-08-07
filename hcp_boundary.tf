@@ -5,4 +5,3 @@ resource "hcp_boundary_cluster" "main" {
   username   = var.hcp_boundary_admin_username
   password   = var.hcp_boundary_admin_password
 }
-
