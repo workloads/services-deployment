@@ -4,4 +4,11 @@ resource "hcp_boundary_cluster" "main" {
   tier       = var.hcp_boundary_cluster_tier
   username   = var.hcp_boundary_admin_username
   password   = var.hcp_boundary_admin_password
+
+  maintenance_window_config {
+    day          = var.hcp_boundary_maintenance_window.day
+    start        = var.hcp_boundary_maintenance_window.start
+    end          = var.hcp_boundary_maintenance_window.end
+    upgrade_type = var.hcp_boundary_maintenance_window.upgrade_type
+  }
 }
