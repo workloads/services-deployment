@@ -29,12 +29,15 @@ For more information, including detailed usage guidelines, see the [Terraform do
 | datadog_api_url | Datadog API URL. | `string` | yes |
 | datadog_api_zone | Datadog API Zone. | `string` | yes |
 | datadog_app_key | Datadog App Key. | `string` | yes |
+| hcp_boundary_admin_auth_method_id | HCP Boundary Cluster Admin Auth Method Identifier. | `string` | yes |
 | hcp_boundary_admin_password | HCP Boundary Cluster Admin Password. | `string` | yes |
 | hcp_boundary_admin_username | HCP Boundary Cluster Admin Username. | `string` | yes |
+| hcp_boundary_cluster_id | The ID of the HCP Boundary Cluster. | `string` | yes |
 | hvn_id_aws | AWS-specific HashiCorp HVN Identifier. | `string` | yes |
 | project_identifier | Human-readable Project Identifier. | `string` | yes |
 | tfe_organization | Name of the Terraform Cloud Organization. | `string` | yes |
 | hcp_boundary_cluster_tier | The tier that the HCP Boundary cluster will be provisioned as. | `string` | no |
+| hcp_boundary_maintenance_window | The maintenance window configuration for when cluster upgrades can take place. | <pre>object({<br>    day          = string<br>    start        = number<br>    end          = number<br>    upgrade_type = string<br>  })</pre> | no |
 
 ### Outputs
 
