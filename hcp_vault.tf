@@ -1,7 +1,7 @@
 module "hcp_vault_aws" {
   # see https://registry.terraform.io/modules/ksatirli/vault-cluster/hcp/latest
   source  = "ksatirli/vault-cluster/hcp"
-  version = "1.2.0"
+  version = "1.3.0-rc.1"
 
   cluster_id = "${var.project_identifier}-aws"
   hvn_id     = var.hvn_id_aws
@@ -12,7 +12,7 @@ module "hcp_vault_aws" {
     datadog_region  = "us1"
   }
 
-  min_vault_version = "1.12.0"
+  min_vault_version = "1.14.1"
   public_endpoint   = true
 
   # see https://cloud.hashicorp.com/products/vault/pricing
