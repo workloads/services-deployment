@@ -25,5 +25,5 @@ module "hcp_vault_aws" {
 # for more guidance, see https://developer.hashicorp.com/terraform/language/state/sensitive-data
 # and https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/resources/vault_cluster_admin_token
 resource "hcp_vault_cluster_admin_token" "main" {
-  cluster_id = data.hcp_vault_cluster.main.cluster_id
+  cluster_id = module.hcp_vault_aws.hcp_vault_cluster.cluster_id
 }
