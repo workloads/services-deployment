@@ -78,7 +78,7 @@ variable "hcp_boundary_maintenance_window" {
     day          = "TUESDAY"
     start        = 2 # time in UTC
     end          = 4 # time in UTC
-    upgrade_type = "AUTOMATIC"
+    upgrade_type = "SCHEDULED"
   }
 }
 

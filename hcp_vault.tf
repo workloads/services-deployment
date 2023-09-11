@@ -19,12 +19,6 @@ module "hcp_vault_aws" {
   tier = "starter_small"
 }
 
-# retrieve information about the HCP Vault Cluster
-# see https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/data-sources/vault_cluster
-data "hcp_vault_cluster" "main" {
-  cluster_id = module.hcp_vault_aws.hcp_vault_cluster.cluster_id
-}
-
 # create Vault Admin Token to be able to make changes to HCP Vault configuration
 # ⚠️ Note that this will persist a Vault Admin Token to Terraform State.
 # ⚠️ Disabling this resource does NOT invalidate the provisioned admin token.
