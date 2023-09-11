@@ -5,6 +5,8 @@ resource "hcp_boundary_cluster" "main" {
   username   = var.hcp_boundary_admin_username
   password   = var.hcp_boundary_admin_password
 
+  # TODO: add Audit Logging for Datadog
+
   maintenance_window_config {
     day          = var.hcp_boundary_maintenance_window.day
     start        = var.hcp_boundary_maintenance_window.start
