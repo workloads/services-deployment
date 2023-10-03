@@ -6,6 +6,12 @@ module "hcp_vault_aws" {
   cluster_id = "${var.project_identifier}-aws"
   hvn_id     = var.hvn_id_aws
 
+  audit_log_config = {
+    enabled         = true
+    datadog_api_key = var.datadog_api_key
+    datadog_region  = "us1"
+  }
+
   metrics_config = {
     enabled         = true
     datadog_api_key = var.datadog_api_key
