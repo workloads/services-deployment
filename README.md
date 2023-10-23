@@ -34,6 +34,8 @@ For more information, including detailed usage guidelines, see the [Terraform do
 
 | Name | Description | Type | Required |
 |------|-------------|------|:--------:|
+| aws_directory_admin_password | AWS Directory Service Admin Password. | `string` | yes |
+| aws_directory_admin_username | AWS Directory Service Admin Username. | `string` | yes |
 | datadog_api_key | Datadog API Key. | `string` | yes |
 | datadog_api_url | Datadog API URL. | `string` | yes |
 | datadog_api_zone | Datadog API Zone. | `string` | yes |
@@ -42,6 +44,7 @@ For more information, including detailed usage guidelines, see the [Terraform do
 | hcp_boundary_admin_username | HCP Boundary Cluster Admin Username. | `string` | yes |
 | hcp_boundary_cluster_id | The ID of the HCP Boundary Cluster. | `string` | yes |
 | hvn_id_aws | AWS-specific HashiCorp HVN Identifier. | `string` | yes |
+| management_region_aws | AWS-specific `Management` Region Identifier. | `string` | yes |
 | project_identifier | Human-readable Project Identifier. | `string` | yes |
 | tfe_organization | Name of Terraform Cloud Organization. | `string` | yes |
 | hcp_boundary_cluster_tier | The tier that the HCP Boundary cluster will be provisioned as. | `string` | no |

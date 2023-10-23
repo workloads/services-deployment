@@ -1,3 +1,14 @@
+variable "aws_directory_admin_username" {
+  type        = string
+  description = "AWS Directory Service Admin Username."
+}
+
+variable "aws_directory_admin_password" {
+  type        = string
+  description = "AWS Directory Service Admin Password."
+  sensitive   = true
+}
+
 # see https://registry.terraform.io/providers/DataDog/datadog/latest/docs#api_key
 variable "datadog_api_key" {
   type        = string
@@ -55,8 +66,6 @@ variable "hcp_boundary_cluster_tier" {
   }
 }
 
-
-
 # see https://registry.terraform.io/providers/hashicorp/hcp/latest/docs/resources/boundary_cluster#maintenance_window_config
 variable "hcp_boundary_maintenance_window" {
   type = object({
@@ -79,6 +88,11 @@ variable "hcp_boundary_maintenance_window" {
 variable "hvn_id_aws" {
   type        = string
   description = "AWS-specific HashiCorp HVN Identifier."
+}
+
+variable "management_region_aws" {
+  type        = string
+  description = "AWS-specific `Management` Region Identifier."
 }
 
 variable "project_identifier" {

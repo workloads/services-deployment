@@ -18,3 +18,19 @@ data "tfe_variable_set" "vault" {
   name         = "Vault"
   organization = var.tfe_organization
 }
+
+# see https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/vpc
+data "aws_vpc" "default" {
+  default = true
+}
+
+# see https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/subnets
+data "aws_subnets" "default" {
+  filter {
+    name = "vpc-id"
+
+    values = [
+      data.aws_vpc.default.id
+    ]
+  }
+}
