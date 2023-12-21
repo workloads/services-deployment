@@ -1,6 +1,6 @@
 # Terraform Cloud Workspace `services-deployment`
 
-> This directory manages Services Deployment for [@workloads](https://github.com/workloads).
+> This repository manages services deployment for [@workloads](https://github.com/workloads).
 
 ## Table of Contents
 
@@ -8,6 +8,7 @@
 * [Terraform Cloud Workspace `services-deployment`](#terraform-cloud-workspace-services-deployment)
   * [Table of Contents](#table-of-contents)
   * [Requirements](#requirements)
+    * [Development](#development)
   * [Usage](#usage)
     * [Inputs](#inputs)
     * [Outputs](#outputs)
@@ -17,11 +18,13 @@
 
 ## Requirements
 
-- HashiCorp Terraform `1.6.x` or [newer](https://developer.hashicorp.com/packer/downloads)
+- HashiCorp Terraform `1.6.x` or [newer](https://developer.hashicorp.com/terraform/downloads)
 
-Optional, and only needed for documentation generation:
+### Development
 
-- `terraform-docs` `0.16.0` or [newer](https://terraform-docs.io/user-guide/installation/)
+For development and testing of this repository:
+
+- `terraform-docs` `0.17.0` or [newer](https://terraform-docs.io/user-guide/installation/)
 
 ## Usage
 
