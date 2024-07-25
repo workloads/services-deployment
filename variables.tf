@@ -48,7 +48,7 @@ variable "hcp_boundary_admin_username" {
   description = "HCP Boundary Cluster Admin Username."
 }
 
-# this value is set in the `Boundary` Variable Set, inside Terraform Cloud
+# this value is set in the `Boundary` Variable Set, inside HCP Terraform
 # see https://app.terraform.io/app/workloads/settings/varsets/
 variable "hcp_boundary_cluster_id" {
   type        = string
@@ -102,7 +102,7 @@ variable "project_identifier" {
 
 variable "tfe_organization" {
   type        = string
-  description = "Name of Terraform Cloud Organization."
+  description = "Name of HCP Terraform Organization."
 }
 
 locals {
