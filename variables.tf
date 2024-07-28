@@ -105,6 +105,12 @@ variable "tfe_organization" {
   description = "Name of HCP Terraform Organization."
 }
 
+variable "tfe_team_token_viewers" {
+  type        = string
+  description = "HCP Terraform `viewers` Team Token."
+  sensitive   = true
+}
+
 locals {
   # HCP Vault-specific Configuration Variables for Cluster lifecycle management
   hcp_vault_variables = [

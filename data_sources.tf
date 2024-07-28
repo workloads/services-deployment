@@ -30,6 +30,8 @@ data "tfe_variable_set" "vault" {
 
 # see https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/data-sources/workspace
 data "tfe_workspace" "main" {
+  provider = tfe.viewer
+
   name         = "services-deployment"
   organization = var.tfe_organization
 }
