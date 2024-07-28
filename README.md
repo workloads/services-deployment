@@ -5,7 +5,7 @@
 ## Table of Contents
 
 <!-- TOC -->
-* [Terraform Cloud Workspace `services-deployment`](#terraform-cloud-workspace-services-deployment)
+* [HCP Terraform Workspace `services-deployment`](#hcp-terraform-workspace-services-deployment)
   * [Table of Contents](#table-of-contents)
   * [Requirements](#requirements)
     * [Development](#development)
@@ -61,13 +61,14 @@ For more information, including detailed usage guidelines, see the [Terraform do
 |------|-------------|
 | hcp_boundary_urls | HCP Boundary URLs. |
 | hcp_vault_urls | HCP Vault URLs. |
+| tfe_workspace_terraform_version | Terraform version identifier of current HCP Terraform Workspace. |
 <!-- END_TF_DOCS -->
 
 ## Notes
 
 ### Sensitive Data
 
-Terraform state may contain [sensitive data](https://developer.hashicorp.com/terraform/language/state/sensitive-data). This workspace uses [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs) to safely store state, and encrypt the data at rest.
+Terraform state may contain [sensitive data](https://developer.hashicorp.com/terraform/language/state/sensitive-data). This workspace uses [HCP Terraform](https://developer.hashicorp.com/terraform/cloud-docs) to safely store state, and encrypt the data at rest.
 
 ## Contributors
 
